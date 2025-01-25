@@ -1,0 +1,29 @@
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Spacing between icons */
+}
+
+.responsive-icon {
+    width: 5vw; /* Adjust to 5% of viewport width */
+    height: 5vw;
+    max-width: 40px; /* Maximum size for larger screens */
+    max-height: 40px;
+    min-width: 20px; /* Minimum size for smaller screens */
+    min-height: 20px;
+}
+
+@media (max-width: 768px) {
+    .responsive-icon {
+        width: 7vw; /* Slightly larger icons on smaller screens */
+        height: 7vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .responsive-icon {
+        width: 9vw; /* Larger icons for very small screens */
+        height: 9vw;
+    }
+}
